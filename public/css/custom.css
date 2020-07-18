@@ -1,0 +1,26 @@
+#block1
+{
+    min-height: 600px;
+    margin: 82.5px;
+}
+.table
+{
+    margin: 60px 0px 100px;;
+}
+.menu
+{
+    text-align: center;
+    margin: 30px 0px;
+    color: #007BFF;
+    font-style: italic;
+}
+.pro
+{
+    color: #007BFF;
+    font-style: italic;
+}
+#noRegister
+{
+    width: 500px;
+    margin: 0 auto;
+}
