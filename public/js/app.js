@@ -8,7 +8,8 @@ $.ajaxSetup({
 
 function onLoad()
 {
-    getProducts(); 
+    alert("Hello");
+    getProducts();
 }
 
 function cart()
