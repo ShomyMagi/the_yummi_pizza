@@ -49,6 +49,7 @@ return [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
             'host' => 'eu-cdbr-west-03.cleardb.net',
+            'options' => [PDO::ATTR_EMULATE_PREPARES => true,],
             'port' => env('DB_PORT', '3306'),
             'database' => 'heroku_afb66af527f3ccd',
             'username' => 'bd08df38102e34',
