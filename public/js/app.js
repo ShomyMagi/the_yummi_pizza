@@ -1,4 +1,4 @@
-var baseUrl = '/the_yummi_pizza/public/';
+var baseUrl = '/the_yummi_pizza/';
 
 $.ajaxSetup({
     headers: {
