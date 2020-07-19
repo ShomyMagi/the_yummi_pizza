@@ -42,14 +42,18 @@ return [
             'prefix' => '',
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
         ],
-
+        
+        mysql://bd08df38102e34:3d4cae11@eu-cdbr-west-03.cleardb.net/heroku_afb66af527f3ccd?reconnect=true
+        
         'mysql' => [
             'driver' => 'mysql',
-            'host' => 'db4free.net',
-            'port' => '3306',
-            'database' => 'theyummipizzaapp',
-            'username' => 'immaggi',
-            'password' => 'assassin1994',
+            'url' => env('DATABASE_URL'),
+            'host' => 'eu-cdbr-west-03.cleardb.net',
+            'port' => env('DB_PORT', '3306'),
+            'database' => 'heroku_afb66af527f3ccd',
+            'username' => 'bd08df38102e34',
+            'password' => '3d4cae11',
+            'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
