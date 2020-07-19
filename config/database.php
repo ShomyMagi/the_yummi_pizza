@@ -45,13 +45,11 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', 'db4free.net'),
-            'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'theyummipizzaapp'),
-            'username' => env('DB_USERNAME', 'immaggi'),
-            'password' => env('DB_PASSWORD', 'assassin1994'),
-            'unix_socket' => env('DB_SOCKET', ''),
+            'host' => 'db4free.net',
+            'port' => '3306',
+            'database' => 'theyummipizzaapp',
+            'username' => 'immaggi',
+            'password' => 'assassin1994',
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
