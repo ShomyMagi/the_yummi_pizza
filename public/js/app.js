@@ -139,7 +139,7 @@ function countPrice(callback)
             var str_total2 = total2.toString();
             var euro = Number(str_total2.slice(0, 4));
 
-            if(total > 15)
+            if(total > 15 || base > 15)
             {
                 var deliveryDolar = 0;
                 var deliveryEuro = 0;
