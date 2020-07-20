@@ -101,7 +101,7 @@ function getCart(callback)
                     cartData+='<td><i>'+ data[$i]["name"] +'</i></td>';
                     cartData+='<td><i>'+ data[$i]["text"].slice(13,100) +'</i></td>';
                     cartData+='<td><i>'+ data[$i]["price"] +'$</i></td>';
-                    cartData+='<td><img src="'+ baseUrl + data[$i]["src"] +'" width="80px" height="55px" alt="'+ data[$i]["alt"] +'"/></td>';
+                    cartData+='<td><img src="'+ data[$i]["src"] +'" width="80px" height="55px" alt="'+ data[$i]["alt"] +'"/></td>';
                     cartData+='<td><select class="summable" onChange="countPrice(); return false"><option value="'+data[$i]["price"]+'">1</option><option value="'+data[$i]["price"] * 2+'">2</option><option value="'+data[$i]["price"] * 3+'">3</option><option value="'+data[$i]["price"] * 4+'">4</option><option value="'+data[$i]["price"] * 5+'">5</option></select></td>';
                     cartData+='<td><button class="btn btn-danger btn-sm" onClick="deleteCart('+ data[$i]["id_cart"] +'); return false">Delete</button></td>';
                 cartData+='</tr>';
