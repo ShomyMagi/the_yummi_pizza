@@ -6,12 +6,15 @@ use App\Product;
 
 class ProductController extends Controller
 {
+    public $data;
     
     public function index()
     {
         try
         {
-            return view('index');
+            $product = new Product();
+            $this->data["products"] = $product->getProducts();
+            return view('index', $this->data);
             
         } catch (Exception $ex) {
             \Log::error($ex->getMessage());
