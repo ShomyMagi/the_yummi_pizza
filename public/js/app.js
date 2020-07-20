@@ -8,7 +8,6 @@ $.ajaxSetup({
 
 function onLoad()
 {
-    alert("Hello");
     getProducts();
 }
 
