@@ -18,13 +18,11 @@
    <div class="col-lg-12">       
 
      <div class="row" id="app">
-         @foreach($products as $p)
-            $p->name
-            $p->text
-            $p->price
-         @endforeach
+         
      </div>
-     
+     @foreach($products as $p)
+        <p>{{$p->name}}</p>
+     @endforeach
    </div>
 
  </div>
