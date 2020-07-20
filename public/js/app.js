@@ -1,4 +1,4 @@
-var baseUrl = '/public/';
+//var baseUrl = '/public/';
 
 $.ajaxSetup({
     headers: {
@@ -22,7 +22,7 @@ function getProducts()
     $.ajax({
        type: 'GET',
        dataType: 'json',
-       url: baseUrl + 'products',
+       url: 'products',
        success: function(data) {                     
            
            var productsData = '';
@@ -53,7 +53,7 @@ function addToCart(id)
 {
     $.ajax({
         type: 'POST',
-        url: baseUrl + 'addToCart/'+ id,
+        url: 'addToCart/'+ id,
         data: {
             product_id: id
         },
@@ -77,7 +77,7 @@ function deleteCart(id)
     {
        $.ajax({
        type: 'GET',
-       url: baseUrl + 'deleteCart/' + id,
+       url: 'deleteCart/' + id,
        success: function() 
        {
            getCart();
@@ -92,7 +92,7 @@ function getCart(callback)
     $.ajax({
         type: 'GET',
         dataType: 'json',
-        url: baseUrl + 'cart/getCart',
+        url: 'cart/getCart',
         success: function(data) {
             var cartData = '';
             $id = 0;
@@ -121,7 +121,7 @@ function countPrice(callback)
     $.ajax({
        type: 'GET',
        dataType: 'json',
-       url: baseUrl + 'cart/countCart',
+       url: 'cart/countCart',
        success: function(data) {                           
        
        var dolarData = '';
@@ -253,7 +253,7 @@ function order()
             $.ajax({
                 type: 'POST',
                 dataType: 'json',
-                url: baseUrl + 'order',
+                url: 'order',
                 data: {
                     order: orderData,
                     first_name: first_name,
@@ -287,7 +287,7 @@ function cartDelete()
 {
     $.ajax({
     type: 'GET',
-    url: baseUrl + 'cart/delete',
+    url: 'cart/delete',
     success: function()
     {
         cart();
