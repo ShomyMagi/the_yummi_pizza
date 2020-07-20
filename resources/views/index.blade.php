@@ -20,16 +20,14 @@
      <div class="row" id="app">
          
      </div>
-     @foreach($products as $p)
-        <p>{{$p->name}}</p>
-     @endforeach
+
    </div>
 
  </div>
 
 @section('js')
 @parent
-    <script src="{{asset('/')}}js/app.js" onLoad="onLoad()"></script>
+    <script src="js/app.js" onLoad="onLoad()"></script>
 @endsection
 
 @endsection
