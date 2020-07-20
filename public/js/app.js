@@ -1,5 +1,3 @@
-//var baseUrl = '/public/';
-
 $.ajaxSetup({
     headers: {
         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -31,7 +29,7 @@ function getProducts()
                productsData+= '<div class="col-lg-4 col-md-6 mb-4">';
                  productsData+= '<div class="card h-100">';
                    productsData+= '<input type="hidden" id="productId" value="'+ data[$i]["id_product"] +'">';
-                   productsData+= '<img class="card-img-top" src="'+ baseUrl+data[$i]["src"] +'" alt="'+ data[$i]["alt"] +'">';
+                   productsData+= '<img class="card-img-top" src="'+ data[$i]["src"] +'" alt="'+ data[$i]["alt"] +'">';
                    productsData+= '<div class="card-body">';
                      productsData+= '<h4 class="card-title">';
                        productsData+= '<h4 class="pro">'+ data[$i]["name"] +'<h4>';
@@ -61,7 +59,7 @@ function addToCart(id)
         {
              if(confirm("Go to your shopping cart ?"))
              {
-                 location.href = baseUrl + "cart";
+                 location.href = "cart";
              }
         },
         error: function(error)
