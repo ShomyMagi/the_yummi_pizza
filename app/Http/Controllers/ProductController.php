@@ -5,16 +5,12 @@ use App\Product;
 //use Illuminate\Http\Request;
 
 class ProductController extends Controller
-{
-    public $data;
-    
+{  
     public function index()
     {
         try
         {
-            $product = new Product();
-            $this->data["products"] = $product->getProducts();
-            return view('index', $this->data);
+            return view('index');
             
         } catch (Exception $ex) {
             \Log::error($ex->getMessage());
