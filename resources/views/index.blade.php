@@ -27,7 +27,7 @@
 
 @section('js')
 @parent
-    <script src="js/app.js" onLoad="onLoad()"></script>
+    <script src="{{asset('/')}}js/app.js" onLoad="onLoad();"></script>
 @endsection
 
 @endsection
