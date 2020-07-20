@@ -150,9 +150,6 @@ function countPrice(callback)
                 var deliveryEuro = 7 * 0.88;
             }
             
-            var base1 = base + deliveryDolar;
-            var base2 = base + deliveryEuro;
-            
             var totalDolar = dolar + deliveryDolar;
             var str_final = totalDolar.toString();
             var finalDolar = Number(str_final.slice(0, 4));
@@ -163,6 +160,9 @@ function countPrice(callback)
             
             var ternary1 = dolar ? dolar : base;
             var ternary2 = euro ? euro : base * 0.88;
+           
+            var base1 = base + deliveryDolar;
+            var base2 = base + deliveryEuro;
             
             var ternary3 = finalDolar ? finalDolar : base1;
             var ternary4 = finalEuro ? finalEuro : base2;
