@@ -49,7 +49,6 @@ return [
             'driver' => 'mysql',
             'url' => 'mysql://bd08df38102e34:3d4cae11@eu-cdbr-west-03.cleardb.net/heroku_afb66af527f3ccd?reconnect=true',
             'host' => 'eu-cdbr-west-03.cleardb.net',
-            'options' => [PDO::ATTR_EMULATE_PREPARES => true,],
             'port' => '3306',
             'database' => 'heroku_afb66af527f3ccd',
             'username' => 'bd08df38102e34',
