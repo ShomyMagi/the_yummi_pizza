@@ -184,7 +184,7 @@ function countCartId()
     $.ajax({
        type: 'GET',
        dataType: 'json',
-       url: baseUrl + 'cart/countCartId',
+       url: 'cart/countCartId',
        success: function(data) {
            var countData = '';           
            
