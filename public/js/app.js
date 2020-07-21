@@ -57,10 +57,7 @@ function addToCart(id)
         },
         success: function()
         {
-             if(confirm("Go to your shopping cart ?"))
-             {
-                 location.href = "cart";
-             }
+             countCartId();
         },
         error: function(error)
         {
@@ -80,6 +77,7 @@ function deleteCart(id)
        {
            getCart();
            countPrice();
+           countCartId();
        }
     });
     }
@@ -305,6 +303,7 @@ function cartDelete()
     success: function()
     {
         cart();
+        countCartId();
     },
     error: function(error)
     {
