@@ -44,4 +44,11 @@ class Cart extends Model {
                 ->sum('price');
         return $count;
     }
+    
+    public function countIdCart()
+    {
+        $countId = Cart::join('products', 'id_product', '=', 'cart.product_id')
+                ->count('id_cart');
+        return $countId;
+    }
 }
