@@ -179,6 +179,22 @@ function countPrice(callback)
    });
 }
 
+function countCartId()
+{
+    $.ajax({
+       type: 'GET',
+       dataType: 'json',
+       url: baseUrl + 'cart/countCartId',
+       success: function(data) {
+           var countData = '';           
+           
+           countData+= '<b><i>'+ data +'</i></b>';
+           
+           $("#countCart").html(countData);
+       }
+    });
+}
+
 function order()
 {
     var first_name = document.getElementById('first_name').value;
