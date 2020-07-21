@@ -19,7 +19,7 @@
 
 </head>
 
-<body>
+<body onLoad="countCartId()">
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
@@ -30,7 +30,7 @@
             <a class="nav-link" href="{{asset('/')}}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{asset('/cart')}}">Shoping Cart</a>
+            <a class="nav-link" href="{{asset('/cart')}}">Shoping Cart(<span id="countCart"></span>)</a>
           </li>
         </ul>
       </div>
