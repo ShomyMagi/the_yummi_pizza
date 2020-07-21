@@ -20,5 +20,6 @@ use Illuminate\Support\Facades\Route;
     Route::post('/addToCart/{id}', 'CartController@addToCart');
     Route::get('/deleteCart/{id}', 'CartController@deleteFromCart');
     Route::get('/cart/countCart', 'CartController@countCart');
+    Route::get('/cart/countCartId', 'CartController@countCartId');
     Route::post('/order', 'OrderController@order');
     Route::get('/cart/delete', 'CartController@deleteCart');
