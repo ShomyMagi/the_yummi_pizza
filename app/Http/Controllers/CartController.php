@@ -81,4 +81,17 @@ class CartController extends Controller
             \Log::error($ex->getMessage());
         }
     }
+    
+    public function countCartId()
+    {
+        try
+        {
+            $cart = new Cart();
+            $data = $cart->countIdCart();
+            return response()->json($data);
+            
+        } catch (Exception $ex) {
+            \Log::error($ex->getMessage());
+        }
+    }
 }
