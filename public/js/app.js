@@ -186,7 +186,7 @@ function countCartId()
        success: function(data) {
            var countData = '';           
            
-           countData+= '<b><i>'+ data +'</i></b>';
+           countData+= '<b><i style="color:red">'+ data +'</i></b>';
            
            $("#countCart").html(countData);
        }
